@@ -1,6 +1,9 @@
 ROOT := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 QUARTZ := $(ROOT)quartz
 
+_ARGS := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
+$(eval $(_ARGS):;@:)
+
 .PHONY: setup preview new
 
 setup:
@@ -15,8 +18,10 @@ preview:
 	cd $(QUARTZ) && bun run quartz build --serve
 
 new:
-	@test -n "$(title)" || (echo "Usage: make new title=<title>"; exit 1)
+	@test -n "$(_ARGS)" || (echo "Usage: make new <path/title>"; exit 1)
 	@DATE=$$(date +%Y-%m-%d); \
-	FILE="$(ROOT)notes/$(title).md"; \
-	sed -e "s/{{title}}/$(title)/" -e "s/{{date:YYYY-MM-DD}}/$$DATE/" $(ROOT)template.md > "$$FILE"; \
+	FILE="$(ROOT)notes/$(_ARGS).md"; \
+	BASENAME=$$(basename "$(_ARGS)"); \
+	mkdir -p "$$(dirname "$$FILE")"; \
+	sed -e "s/{{title}}/$$BASENAME/" -e "s/{{date:YYYY-MM-DD}}/$$DATE/" $(ROOT)template.md > "$$FILE"; \
 	echo "Created: $$FILE"
