@@ -1,7 +1,7 @@
 ROOT := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 QUARTZ := $(ROOT)quartz
 
-.PHONY: setup preview
+.PHONY: setup preview new
 
 setup:
 	git clone --depth 1 https://github.com/jackyzha0/quartz $(QUARTZ) && \
@@ -13,3 +13,10 @@ setup:
 
 preview:
 	cd $(QUARTZ) && bun run quartz build --serve
+
+new:
+	@test -n "$(title)" || (echo "Usage: make new title=<title>"; exit 1)
+	@DATE=$$(date +%Y-%m-%d); \
+	FILE="$(ROOT)notes/$(title).md"; \
+	sed -e "s/{{title}}/$(title)/" -e "s/{{date:YYYY-MM-DD}}/$$DATE/" $(ROOT)template.md > "$$FILE"; \
+	echo "Created: $$FILE"
