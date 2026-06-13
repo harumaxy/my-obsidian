@@ -1,0 +1,11 @@
+{
+  "file_scan_exclusions": [
+    "**/.git",
+    "Makefile",
+    "template.md",
+    "quartz",
+    ".claude",
+    ".gitignore",
+    ".zed",
+  ],
+}
