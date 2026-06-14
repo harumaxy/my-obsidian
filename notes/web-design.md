@@ -24,7 +24,7 @@ date: 2026-06-13
 #### 2. Foundations
 - [x] https://developer.apple.com/design/human-interface-guidelines/color
 - [x] https://developer.apple.com/design/human-interface-guidelines/typography
-- [ ] https://developer.apple.com/design/human-interface-guidelines/layout
+- [x] https://developer.apple.com/design/human-interface-guidelines/layout
 - [ ] https://developer.apple.com/design/human-interface-guidelines/accessibility
 
 #### 3. Patterns
@@ -530,7 +530,7 @@ macOS 13pt @ 60cm ≒ iOS 17pt @ 40cm ≒ tvOS 29pt @ 250cm
 - **段階的な表示（Progressive Disclosure）** → 画面外にコンテンツがあることを示す（一部を見切れさせる等）
 - **コントロール周囲に十分なスペース** → 詰め込みすぎると機能が理解しにくくなる
 
-### 適応性
+### 適応性 (Adaptibility, Responsibility)
 
 アプリはデバイス・システムの変化に適応する必要がある。対応すべき変化：
 
@@ -574,6 +574,74 @@ macOS 13pt @ 60cm ≒ iOS 17pt @ 40cm ≒ tvOS 29pt @ 250cm
 - Pro Max / Plus など大型 iPhone は横向きで Regular Width になる
 
 Web 開発での CSS メディアクエリ・Tailwind の `sm:` `md:` ブレークポイントに相当する考え方。
+
+### 補足：フルブリードとステータスバー
+
+**フルブリード（Full Bleed）**
+印刷用語で「端まで余白なく塗り潰す」の意。UIではコンテンツが画面端まで余白なく広がるレイアウト。
+ゲームや動画など没入感が重要なアプリで推奨。Webではヒーロー画像の `width: 100vw` / `object-fit: cover` が相当。
+
+**ステータスバー（システム）**
+- OSのシステムステータスバー（時刻・電池・通信）は**原則常時表示**がベストプラクティス
+- 非表示が許容されるのはゲーム・フルスクリーン動画・カメラなど没入感が必要な場合のみ
+- 「デザインがすっきりする」という理由だけで隠すのはHIG違反の精神
+
+**アプリ内ステータスバーは別物**
+- Slackの「接続中...」バナー、Gmailの送信中インジケーターなどはアプリ独自実装
+- システムステータスバーとは無関係で自由に設計できる
+- HIGが制約しているのは「OSのステータスバーを勝手に隠すな」という点のみ
+
+---
+
+### 補足：アダプティブデザイン — ネイティブ vs Web
+
+#### SwiftUI（ネイティブ）
+
+テキストスタイルを指定するだけでダイナミックタイプ・アクセシビリティ・ダークモードが自動で機能する。
+
+```swift
+Text("本文").font(.body)       // ダイナミックタイプ自動追従
+Text("見出し").font(.headline)
+
+// カスタムフォントでも relativeTo で追従させられる
+Text("テキスト").font(.custom("MyFont", size: 17, relativeTo: .body))
+```
+
+- `px` 固定指定（`.system(size: 17)`）はダイナミックタイプに追従しないので避ける
+- **システムフォント + システム定義スタイルを使えば、アダプティブ対応は特別なことをしなくて良い**
+
+#### Web（Tailwind / CSS）
+
+自分で設計する必要がある。
+
+```css
+/* px はユーザーのブラウザフォントサイズ設定を無視する → NG */
+font-size: 14px;
+
+/* rem はルートフォントサイズに追従 → OK（Tailwind のデフォルト） */
+font-size: 0.875rem; /* = text-sm */
+```
+
+- デバイスサイズ対応 → メディアクエリ / Tailwind ブレークポイント（`md:text-base`）
+- ユーザーのフォントサイズ設定対応 → `rem` 単位を使う
+- 毎回 `sm:text-xs md:text-base` を書くのはアンチパターン → コンポーネント化 or `@apply` で閉じ込める
+
+```css
+@layer components {
+  .text-body { @apply text-sm md:text-base leading-relaxed; }
+}
+```
+
+#### まとめ
+
+| | SwiftUI（ネイティブ） | Web |
+|---|---|---|
+| フォントサイズ追従 | `.font(.body)` だけで自動 | `rem` 単位が必要 |
+| デバイス対応 | システムが自動 | メディアクエリ / ブレークポイント |
+| ダークモード | 自動 | `dark:` バリアント or CSS変数 |
+| コンポーネント化 | `ViewModifier` / カスタムView | `@apply` / Reactコンポーネント |
+
+> HIG を学ぶ意義のひとつは「Apple がネイティブで自動でやっていることを、Web でも意識して再現する」という視点を持てること。
 
 ---
 
