@@ -28,8 +28,8 @@ preview:
 new:
 	@test -n "$(_ARGS)" || (echo "Usage: make new <path/title>"; exit 1)
 	@DATE=$$(date +%Y-%m-%d); \
-	FILE="$(ROOT)notes/$(_ARGS).md"; \
-	BASENAME=$$(basename "$(_ARGS)"); \
+	FILE="$(ROOT)notes/$(_ARGS:%.md=%).md"; \
+	BASENAME=$$(basename "$(_ARGS)" .md); \
 	mkdir -p "$$(dirname "$$FILE")"; \
 	sed -e "s/{{title}}/$$BASENAME/" -e "s/{{date:YYYY-MM-DD}}/$$DATE/" $(ROOT)template.md > "$$FILE"; \
 	echo "Created: $$FILE"
