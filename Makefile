@@ -4,7 +4,15 @@ QUARTZ := $(ROOT)quartz
 _ARGS := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
 $(eval $(_ARGS):;@:)
 
-.PHONY: setup preview new
+.PHONY: setup preview new help
+
+.DEFAULT_GOAL := help
+
+help:
+	@echo "Available commands:"
+	@echo "  make setup            - Set up Quartz"
+	@echo "  make preview          - Preview notes"
+	@echo "  make new <path/title> - Create a new note"
 
 setup:
 	git clone --depth 1 https://github.com/jackyzha0/quartz $(QUARTZ) && \
