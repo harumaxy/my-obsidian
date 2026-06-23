@@ -1,7 +1,6 @@
 ---
 title: Spin Framework 言語比較
 description: Spin で使える言語の違い（executor, SDK, パフォーマンス）
-permalink:
 aliases:
   -
 tags:

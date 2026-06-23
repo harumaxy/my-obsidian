@@ -1,7 +1,6 @@
 ---
 title: loop-engineering
 description: ループエンジニアリングの概要と実装方法
-permalink:
 aliases:
   -
 tags:

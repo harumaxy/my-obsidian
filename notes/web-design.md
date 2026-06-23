@@ -1,7 +1,6 @@
 ---
 title: web-design
 description:
-permalink:
 aliases:
   -
 tags:

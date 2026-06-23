@@ -1,7 +1,6 @@
 ---
 title: summaries1
 description:
-permalink:
 aliases:
   -
 tags:

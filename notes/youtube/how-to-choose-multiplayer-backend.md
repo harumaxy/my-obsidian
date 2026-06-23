@@ -1,7 +1,6 @@
 ---
 title: How to Choose Your Multiplayer Backend
 description: ゲームのマルチプレイバックエンド選択ガイド
-permalink: /youtube/multiplayer-backend
 aliases:
   - マルチプレイ
   - ネットコード

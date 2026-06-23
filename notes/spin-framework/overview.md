@@ -1,7 +1,6 @@
 ---
 title: Spin Framework Overview
 description: WebAssembly サーバーレスフレームワーク Spin の概要
-permalink:
 aliases:
   -
 tags:

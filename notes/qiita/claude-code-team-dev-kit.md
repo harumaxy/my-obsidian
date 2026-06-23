@@ -1,7 +1,6 @@
 ---
 title: Claude Code でチーム開発ルールを自動化する (team-dev-kit)
 description: Skill/Hook でドキュメント運用から自動化運用へ
-permalink:
 aliases:
   - claude-code-team-dev-kit
 tags:

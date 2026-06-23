@@ -1,7 +1,6 @@
 ---
 title: Zig が勢いを得られない理由
 description: 技術的には優秀でも業界採用が進まないZigの課題と、AI時代での逆転の可能性
-permalink:
 aliases:
   -
 tags:

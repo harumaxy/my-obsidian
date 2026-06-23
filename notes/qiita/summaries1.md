@@ -1,7 +1,6 @@
 ---
 title: AWSの新しいAIエージェント搭載IDE「Kiro」のSpecモードを使用して開発する
 description: Qiita記事の要約
-permalink:
 aliases:
   -
 tags:

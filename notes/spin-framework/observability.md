@@ -1,7 +1,6 @@
 ---
 title: observability
 description:
-permalink:
 aliases:
   -
 tags:

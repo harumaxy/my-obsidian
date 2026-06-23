@@ -1,7 +1,6 @@
 ---
 title: todos
 description:
-permalink:
 aliases:
   -
 tags:
@@ -34,3 +33,4 @@ date: 2026-06-21
   - オープンソース（MIT License）
   - 参考リンク: https://gamefromscratch.com/the-gates-godot-powered-3d-web-browser/
 - [ ] DataStar
+- [ ] BHVR (ビーヴァー)スタック

@@ -1,7 +1,6 @@
 ---
 title: dev
 description:
-permalink:
 aliases:
   -
 tags:

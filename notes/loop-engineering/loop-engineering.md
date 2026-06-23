@@ -1,7 +1,6 @@
 ---
 title: loop-engineering
 description: AIコーディングエージェントを自律的に動かすオーケストレーションパターン
-permalink:
 aliases:
   - ループエンジニアリング
 tags:

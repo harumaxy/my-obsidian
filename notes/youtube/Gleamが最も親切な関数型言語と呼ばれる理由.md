@@ -1,7 +1,6 @@
 ---
 title: Gleamが最も親切な関数型言語と呼ばれる理由
 description: 2026年Stack Overflow初登場2位。ルイス・ピルフォールドが設計した関数型言語の哲学
-permalink:
 aliases:
   -
 tags:
