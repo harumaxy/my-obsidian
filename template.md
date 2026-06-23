@@ -1,7 +1,7 @@
 ---
 title: {{title}}
 description:
-permalink:
+# permalink:  # 設定を間違えると無限リダイレクトになるので使わない
 aliases:
   -
 tags:
@@ -9,4 +9,3 @@ tags:
 draft: false
 date: {{date:YYYY-MM-DD}}
 ---
-
