@@ -10,6 +10,9 @@ draft: false
 date: 2026-06-21
 ---
 
+
+https://addyosmani.com/blog/loop-engineering/
+
 # Loop Engineering
 
 Addy Osmani (元 Google) による記事 (2026/06/07)。
