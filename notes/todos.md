@@ -27,6 +27,13 @@ date: 2026-06-21
 
 ## 学びたいテクノロジー
 
+- [ ] Kling AI 3.0
+  - AIを使った動画・画像生成プラットフォーム
+  - VIDEO 3.0：15秒の複数シーン制御、マルチモーダル指示解析対応
+  - IMAGE 3.0 Omni：2K/4K出力、Image Series Mode（複数関連画像一度生成）
+  - SmartLab：統合クリエイティブプラットフォーム
+  - NextGen Initiative：クリエイター向けファンディングプログラム
+  - 参考リンク: https://klingai.com
 - [ ] The Gates プロジェクト
   - Godotをベースとした3Dウェブブラウザ
   - サイバースペース/メタバースのコンセプト実装
@@ -34,3 +41,5 @@ date: 2026-06-21
   - 参考リンク: https://gamefromscratch.com/the-gates-godot-powered-3d-web-browser/
 - [ ] DataStar
 - [ ] BHVR (ビーヴァー)スタック
+- [ ] https://createlang.rs
+- [ ] https://github.com/Egonex-AI/Understand-Anything

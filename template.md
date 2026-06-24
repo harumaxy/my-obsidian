@@ -1,7 +1,7 @@
 ---
 title: {{title}}
 description:
-# permalink:  # 設定を間違えると無限リダイレクトになるので使わない
+# permalink:  # don't use
 aliases:
   -
 tags:
