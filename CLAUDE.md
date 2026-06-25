@@ -50,3 +50,8 @@ youtube の URL を貼られたら、字幕をダウンロードして `/baoyu-y
 
  `cd /Users/harumaxy/.claude/skills/baoyu-youtube-transcript` しないように
  このディレクトリ内でスクリプトを実行すること
+
+## 技術記事の要約
+
+qiita, zenn のURLを貼られたら、中身の記事を取得して要約を出力する
+また、不明なURLを単体で貼られた場合も、技術ブログ以外のドメインの技術記事の可能性が高いので、とりあえず取得して内容を要約する
