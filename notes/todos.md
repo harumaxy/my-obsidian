@@ -48,3 +48,7 @@ date: 2026-06-21
 - [] https://github.com/Nodragem/top-down-action-adventure-starter-kit
 - [ ] Let's Make An FPS in the Godot Engine: https://www.youtube.com/watch?app=desktop&v=L5ObCs9OMRY
 - [ ] ALS V4 Custom video https://3dnchu.com/archives/alsv4-custom-video/
+- [ ] Howto create a run animation https://www.youtube.com/watch?v=lK6iiZBxJuk
+- [ ] Raia(Godot MMO) https://github.com/Quaint-Studios/Reia
+- [ ] Hoverify https://www.youtube.com/watch?app=desktop&v=6OTR68Ux9AQ
+- [ ] Remeda (軽量な type-safe, functional ユーティリティ) https://github.com/remeda/remeda
