@@ -33,6 +33,7 @@ new:
 	_PATH=$${_PATH%.md}; \
 	FILE="$(ROOT)notes/$${_PATH}.md"; \
 	BASENAME=$$(basename "$$_PATH" .md); \
+	test ! -f "$$FILE" || (echo "Error: $$FILE already exists"; exit 1); \
 	mkdir -p "$$(dirname "$$FILE")"; \
 	sed -e "s/{{title}}/$$BASENAME/" -e "s/{{date:YYYY-MM-DD}}/$$DATE/" $(ROOT)template.md > "$$FILE"; \
 	echo "Created: $$FILE"
