@@ -57,3 +57,4 @@ date: 2026-06-21
 - [ ] Raia(Godot MMO) https://github.com/Quaint-Studios/Reia
 - [ ] Hoverify https://www.youtube.com/watch?app=desktop&v=6OTR68Ux9AQ
 - [ ] Remeda (軽量な type-safe, functional ユーティリティ) https://github.com/remeda/remeda
+- [ ] Tsumiki フレームワーク (AI駆動開発支援フレームワーク、ClaudeCode Plugin, Skills) https://github.com/classmethod/tsumiki
