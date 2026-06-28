@@ -58,6 +58,8 @@ youtube の URL を貼られたら、字幕をダウンロードして `/baoyu-y
  `cd /Users/harumaxy/.claude/skills/baoyu-youtube-transcript` しないように
  このディレクトリ内でスクリプトを実行すること
 
+ スピーカー識別などはしなくていいので、とにかく素早く内容だけ要約してほしい。
+
 ## 技術記事の要約
 
 qiita, zenn のURLを貼られたら、中身の記事を取得して要約を出力する

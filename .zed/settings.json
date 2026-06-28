@@ -3,7 +3,7 @@
     "**/.git",
     "template.md",
     "quartz",
-    ".claude",
+    // ".claude",
     ".gitignore",
     ".zed",
     // "Makefile",
