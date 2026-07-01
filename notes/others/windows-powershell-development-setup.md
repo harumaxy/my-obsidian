@@ -183,7 +183,7 @@ git config --global core.longpaths true
 
 ### 3. OneDrive の Documents リダイレクト
 
-$PROFILE が置かれる Documents が OneDrive 同期下にあると、プロファイルが見つからない・同期で壊れるなどの混乱が起きる。$PROFILE を実際に開いて場所を確認しておく。
+\$PROFILE が置かれる Documents が OneDrive 同期下にあると、プロファイルが見つからない・同期で壊れるなどの混乱が起きる。$PROFILE を実際に開いて場所を確認しておく。
 
 ### 4. Windows Defender のリアルタイムスキャン
 
