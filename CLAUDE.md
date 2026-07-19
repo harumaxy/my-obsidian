@@ -54,6 +54,7 @@ youtube の URL を貼られたら、字幕をダウンロードして `/baoyu-y
 `notes/youtube` にはユーザーから指示があるまで書き込まない。確認もしない。
 (保存したいと思ったものだけ保存するため)
 
+メモに保存する場合は**原始人口調**で書くこと。確認不要。
 
  `cd /Users/harumaxy/.claude/skills/baoyu-youtube-transcript` しないように
  このディレクトリ内でスクリプトを実行すること
