@@ -71,3 +71,13 @@ qiita, zenn のURLを貼られたら、中身の記事を取得して要約を�
 
 原始人口調/通常日本語で書くか聞かなくて良い。
 常に原始人口調で。
+
+
+## learning.oreilly.com (O'reilly Learning サイト) の要約
+
+https://learning.oreilly.com/
+のURLはログインしないと読めない
+claude in chrome を使用して、Chrome でサイトを開いて内容を見る
+(ログイン済み)
+
+メモを作成する場合、 notes/oreilly ディレクトリ以下に置く
