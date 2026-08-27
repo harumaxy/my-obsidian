@@ -585,3 +585,124 @@ from behind…
 - 潮吹きLoRAを使うと透明感は出るが、色が黄色っぽくなりがちという弱点あり
 - 液体の勢いを補強するプロンプト案: `orgasm`, `excessive pussy juice`, `squirt love juice`
 - `squirt`は挿入・非挿入どちらの構図でも使えるが、`invisible man`と組み合わせると液体が変形（tmp化）することがある
+
+## 構図・ポーズ
+
+- プールで見下ろされる構図: `angle from below, squatting girl, looking at viewer, girl on poolside` を軸に足し引きする
+- フィギュア/ジオラマ風にしたい場合: `faux figurine` でヴィネット風、`isometric` で三次元的構図。`deformed`, `chibi` や3DフィギュアLoRAとの組み合わせも有効
+- 無様系のガニ股しゃがみ(蹲踞ではなく両足が離れた形): `standing in plie squat stance` に `spread legs` などを組み合わせると高確率で成功
+
+## 性器・挿入表現
+
+- 強めのプッシー強調プロンプト例:
+  `(clitoris:2),(detailed pussy:1.35), (puffy pussy:1.4), (plump labia:1.35), (visible clitoris:1.3), (exposed labia majora and minora:1.3), (glistening wet pussy:1.3), (soft plump vulva:1.3), (crotch focus:1.2)`
+- 上記の元になった別バージョン:
+  `(clitoris:2),(exposed_labia:2),(major:2),(partially visible vulva:2),(crotch outline:2),(pussy outline:2),(pussy emphasize:2)`
+- 挿入時に竿(penis)が中途半端に残ってしまう問題は、プロンプトで`penis`や`cock`を直接指定していることが原因という指摘あり。`deep throat`だけを指定すると根元までしっかり収まりやすい。挿入の収まり具合は呪文以上に画角との兼ね合いで変わる
+- 両乳首を同時に吸わせる表現: `sucking both nipples, breasts together`
+
+## 触手表現
+
+- 服の下で蠢く触手は再現が難しく、単体タグでは `clothe_bulge`, `tentacle_bulge` くらいしか効かなかったとの報告
+- `tentacle clothes` LoRA と `tentacle tweak under clothes` LoRA を併用すると改善。さらに別のtentacle系LoRAを強めに重ねがけするとより自然な蠢きになる
+- そもそも原作ジャンル(触手物)でも服の下・胸と股間以外の部位に触手が描かれる構図自体が稀であり、AIの問題というより題材自体がニッチという分析結果
+## 目・顔まわりのトラブル対策
+
+- 目のパーツが滲む問題: ローカルならadetailerで補正、`perfect eyes` タグや `detailed eyes` タグで改善するケースあり。ただし目タグを入れると構図の自由度が下がる傾向
+- Loraや補正で改善しない場合、`汗だくsex` で「アイシャドウがにじんでいる」体で誤魔化す裏技も紹介された
+- PixAIはオプションの顔修正機能があり、eye detailer系Loraより手軽との評価
+- オホ顔（口を縦に尖らせる表情）は `ahegao,` `ohogao,` タグで出ることもあるが再現は難しく、専用Loraを探す方が早い。強めに出したいなら `fucked silly,ahegao,open mouth,puckered lips,heavy breathing,female orgasm,` の組み合わせで強弱調整
+
+
+## 服装・脱衣表現
+
+- 二段袖のような複雑な服: `layered_clothes` で同色の重ね着、または `detached_sleeves,` `puffy_detached_sleeves,` `detached_puff_sleeves,` `arm_warmers` で腕の途中に盛り上がりを作ると近い見た目になる。`Three-quarter sleeves over long sleeves` はほぼ効果なし。`layered_sleeves` は重ね着による袖の広がりに有効、シルエットをタイトにしたい場合はネガティブに `tight` 系を追加
+- 脱いだ服が足元にある構図: `clothes on floor, unworn serafuku, unworn skirt,` のように `clothes on ○○,` `unworn 〇〇,` を使う
+- スカートが落ちる構図: `skirt falling off, skirt dropped at feet, light blue panties at ankles,` の組み合わせで再現可能
+- 胸がブルンとなる構図（勢いよく脱がす/破れる）: `unaligned_breasts, bouncing breasts, motion_lines, motion_blur` に加え、服に `lift` `open` `torn` `tearing` `exploding` を付けたり `wardrobe malfunction` を追加すると良い
+- 別の実例では `popped button, flying button, wardrobe malfunction, bursting breasts, button gap, breast expansion, motion blur, motion lines, bouncing breasts, emphasis lines, open clothes` などが使われ、`nude,nipple` を足すとちゃんと脱げやすくなったという報告あり
+- 服の透明化: `transparent` `translucent` は既存衣装の透明化向け。一から透け感を作るなら `skin-colored` `nude_colored` などの色指定、`silk` `vinyl` などの材質指定、`sheer` `illusion_mesh` などの構造指定を組み合わせる。完全な無色透明を狙うなら `invisible` が最有力との意見
+- `undressing` は脱衣表現の王道。`breasts out` は個人的に打率が高いとの報告
+- 胸元を露出させる系のプロンプト `shirt open` `shirt pull up` はキャラ固定Loraだと効きにくいことがある（`puffy nipples` が残ったまま生成され不自然に胸元だけ開いた服になった失敗例あり）
+
+## 体型・部位の誇張
+
+- 巨大な胸: `gigantic breasts:2.0` のような強調表記、爆乳系のニーズが多い
+- 巨根表現: `gigantic penis` では満足できない層向けに `slender body,small torso,(extremely oversized penis:2.0),(penis dwarfing the body:1.5),(penis much larger than the torso:2.0),(exaggerated proportions:1.4),` の組み合わせが紹介された。玉（睾丸）の言及がないと竿だけ巨大化しがちという指摘もあり
+- 低身長キャラの足が浮く表現: `floating,foots dangle,plantar flexion` で足が地面に届かない座り方を再現
+- 太ももの「正の字」（tally marks）: `tally on legs` で再現可能。画風やLoRAによって出やすさが変わり、手書き風・古いアニメ調の絵柄だと綺麗に出る傾向
+- love handle（横腹の柔肉）のプロンプトは構図によって隠れてしまうことがある
+
+## 挿入・行為系プロンプト
+
+- ペニス複数化のトラブルは `1boy` のように数を明示するタグで抑制。対面人数を固定したい場合は `two characters` も有効
+- ガラスに押し付ける構図: 窓の外からのviewを指定した上で「駅弁+back view」「立ちバック+front view」を組み合わせ、該当部位に `pressed flat against window glass` を追加
+- 種族間・怪物との行為: `monster,interspecies sex,arm_held_back,groping,hug,` の組み合わせでペニスケース状の構図を再現
+- ハンドサイン（性的ジェスチャー）は名前が分からなくてもDanbooruで画像検索して該当タグを特定するのが早い（`fellatio gesture` などが実例として紹介）
+- 体位・行為タグはdanbooruタグがそのまま使える: `dogeza,wariza,seiza,yokozuwari,futanari,bukkake,ahegao,torogao,` など
+- パンチラ・射精系: `pantyshot,` `skirt lift,` `cum drip,` は服を着たままでもエロさを出しやすい定番タグ
+
+## 装飾品・アクセサリー
+
+- 踊り子系の装飾: `circlet`（頭飾り）、`gold belly chain`（腹チェーン）、`gold armlet`（腕輪）、`gold thighlet`（太もも輪、効果安定せず）、`gold anklet`（足首輪）が基本セット。プロンプトに `:1.5` `:2` の強調をつけると装飾が目立つ（数が増えるとは限らない）。`dancer accessories,` でまとめて強調する方法もある
+- 中東風の装飾を足すなら `*_feather_*`（羽）、`fur_*`（ファー）、`flower_*`（花）、`* ruff`（ヒダ飾り）、`*_embroidery`（刺繍）、`hair_ornaments`（頭飾り）、`garter_*`（ガーターベルト）、`*_shawl`（ショール）、`sheer silk cape` などが紹介された（安定性は度外視）
+- タトゥーは部位＋デザインを指定すると出やすい（例: `arm_tattoo, butterfly_tattoo` で腕に蝶の入れ墨）
+
+
+## 挿入・体位・部位別プロンプト
+
+- 竿だけを描写したいときは `disembodied_penis`
+- キスしながら手で触るシチュエーションは `kiss, hand_job, touch penis through clothes,`（服の上から）、直接握るなら `kiss, hand_job, grabbing_penis,`
+- 単に `hand_job` だけだと首に腕を回して抱きしめる構図が出やすいという報告あり
+- パイズリの深度（挟む位置・男性の腰の位置）を制御するプロンプトは見つかっておらず、生成回数で運任せになりがち。パイズリ＋ネガティブに `penis` を入れると乳に埋もれた感じが出るのではという意見もあるが未検証
+- 馬乗りパイズリでは `self paizuri` は誤用で、`assisted paizuri` の方が適切という指摘あり。キャラLoRAに `skirt` タグが紛れ込んでいて誤爆した事例も報告された
+- 手マン（前から腕を使ってガシガシやる構図）を出すコツ：責める側が正面を描かれすぎないようにしつつ、優位に立っているタグ（`femdom`、`dominatrix` 等）と、責められる側の脱力・限界を示すタグを増やすと構図が寄りやすい。パンツ越しに隠す場合は `fingering` や `fisting` を使うとそれっぽくなる
+- 顔の位置を整えるタグの組み合わせ例：`looking_down, looking_at_penis, smelling_penis` や `arched_back, head_back, head_tilt, crying, closed_eyes, looking_back`
+- 二丁拳銃でのボボパン（銃撃戦）構図の最低限プロンプト例：
+  ```
+  1girl, solo, firing, shouting, scenery, dual wielding, torn_clothes, handgun, blood, cracked_glass, broken_window, taking_cover
+  ```
+  ネガティブに `two-handed,` を入れる。Illustrious系ならこれで銃撃している絵になりやすいが、ガンカタ的な複雑なアクションは依然難しい
+- 鬼のツノポーズは Danbooru タグで `horns pose,` が対応
+- 疾走感を出すには `motion blur,`
+- 全裸ではなく羽毛で体を覆いたい場合のプロンプト例：
+  ```
+  1girl, (harpy1.5), neked, entire body covered with soft white feathers, (feather skin:1.4), (fluffy feather body:1.3), soft white plumage, dense short feathers, layered chest feathers, fine feather texture, bird-like body, white feathers, minimal feather gaps, natural feather layering, digitigrade,
+  ```
+  服を着せたくない場合はネガティブに `clothes` を追加
+- ザーメンマスク（顔にかかったマスク）を安定させるには `wearing a white mask,cum under mask,` を入れ、ネガティブに `mouth,` を追加すると崩れにくい
+- 女性上位で笑顔＋しゃぶる系の表情を両立させたい場合：目の表現（`closed_eyes, half-closed_eyes, one_eye_closed`）や漫画的表現（`turn_pale, anger_vein, +++`）で口に頼らない、女性上位の笑顔を強調して咥えながらでも笑わせる、舐め・甘噛みに切り替えて笑顔が効きやすくする、の3パターンが提案された
+
+## ネガティブプロンプト・崩れ対策
+
+- ネガティブプロンプトはポジティブほど効きが強くないと言われるが、意外と効く場合もありランダム性が高い。推奨ネガティブプロンプトは外さない方が無難
+- 指の本数の乱れやへそが複数出る崩れは、画像の縦横比が原因の可能性が指摘されている
+- 目の崩れ対策：モデル変更、ステップ数を増やす、目の造形タグ追加、目専用LoRA、顔修正（adetailer等）の併用。バストアップ程度でもすでに目の描写が崩れ始めるケースが報告されており、`detailed eyes,` タグだけでは不十分。ローカルでもPixAIでも、adetailerや顔修正を使わないと現状Illustrious系モデルでは限界がある
+- Tsubakiで正面立ちさせると身体に不要な影が出る問題：`shadow,shade,depth,ambient occlusion,cast shadow,self-shadowing,heavy shading` を最大値でネガティブに入れても改善しなかったという報告あり。`backlighting` を試すべきという意見も。根本解決には影の出にくい絵柄LoRAを探す/作るしかなさそうとの結論
+
+
+## 体位・行為系プロンプト
+
+- 玉フェラ: `facing up, penis on face, penis, testicles, oral, testicle sucking, open mouth, tongue out, saliva,` — 男性器が女性の顔より上にあることを明示するのがポイント。`testicle sucking`単体より成功率が上がる
+- 69: `1boy and 1girl, 69, handjob, oral, fellatio, boy lying, on back, testicles, girl on top, cunnilingus,` — LoRAから抽出したプロンプト。POV視点はLoRAなしでは再現困難という指摘
+- 顔面騎乗・アナル舐め: 座る側に`sitting_on_face, sitting_on_person, squatting, femdom`、舐める側に`anilingus, on_back, lying, oral`＋`girl_on_top`を指定。男女を逆にしたい場合は`female_rimming_male`という専用タグがある
+- 手.マン/クン.ニで手や口からペニスが生えてくる不具合は、`hetero`タグを入れることで軽減される（強制的に異性愛の構図になるため）
+- ディルドで「抜いた直後」を表現: `pussy_juice_trail, gaping_pussy, pussy_juice_on_dildo, imminent_penetration`。他人に持たせる場合は`holding_dildo`＋`2girls, femdom`を追加。挿入位置を固定したい場合は`dildo_in_pussy`を足す
+- バイブは`egg_vibrator`だと効果が弱く、ディルド系タグの方が扱いやすいという指摘
+- 鞭打ち表現: `whipping`, `hitting`, `stomach_punch`は反映されにくい。`blur, whip marks`の方が効果的との報告
+
+## 表情プロンプト（挿入時の顔など）
+
+- 悲しい系の表情タグ`half-closed_eyes`, `(one_)eye_closed`は挿入の瞬間っぽさを表現しやすい
+- 汎用性が高い表情として、無表情の`expressionless`、オホ顔系の`whistling`が挙げられている
+- 母音ベースの口の形指定: 「い」段は`clenched teeth`、「え」段は`tongue out`、「お」段は`:o`。歯を見せたくない場合は`clenched teeth`を外す
+- 快感の強さを瞳孔で表現するには`constricted pupils`、絶叫させたい場合は`screaming`
+- 怒り・不機嫌系の表情: `annoyed, tsk, angry, clenched teeth`（`tsk`は舌打ちのような動作を示すタグ）
+- 苦悶・我慢系: `furrowed brow, frowning`を`wide eyes`と併用すると感じている表情を強調しやすい
+- いちゃラブハード系: 歯を食いしばる表情に`happy sex`と`intense sex`を追加する組み合わせが紹介されている
+
+## ネガティブプロンプト
+
+- ネガティブプロンプトは先頭に置くほど効果が強くなる傾向があるとされる（体感差ありとの反論も）
+- 基本セットの例: `worst quality, bad quality, low quality, lowres, anatomical nonsense, artistic error, bad anatomy, interlocked fingers, extra fingers,`
+- フタナリを避けたい場合、ネガティブに`(futanari, futa:1.2)`のように重み付けで入れると効果を実感しやすいとの報告
