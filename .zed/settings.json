@@ -5,7 +5,12 @@
     "quartz",
     // ".claude",
     ".gitignore",
-    ".zed",
+    // ".zed",
     // "Makefile",
+    ".claude",
+    "Makefile",
+    "youtube-transcript",
+    "scratchpad",
+    "CLAUDE.md"
   ],
 }
