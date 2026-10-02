@@ -1,0 +1,210 @@
+{
+ "zenn": [
+  {
+   "title": "AI-Slopな日本語を構造レベルで読みやすくするSkill『yomiyasu（よみやす）』を作りました",
+   "url": "https://zenn.dev/algoartis/articles/0b1c731881b25c",
+   "likes": 310,
+   "published_at": "2026-10-01T03:28:20.216+09:00"
+  },
+  {
+   "title": "AI開発時代だからこそ、テストの役割を見つめ直す",
+   "url": "https://zenn.dev/ababup1192/articles/77b844dcfc1529",
+   "likes": 179,
+   "published_at": "2026-09-29T10:00:44.992+09:00"
+  },
+  {
+   "title": "Jujutsu と出会い、15 年使った Git にもう戻れなくなった理由",
+   "url": "https://zenn.dev/oukayuka/articles/15years-git-then-jujutsu",
+   "likes": 109,
+   "published_at": "2026-09-29T08:30:05.382+09:00"
+  },
+  {
+   "title": "３分で読めるトランザクション設計のコツ",
+   "url": "https://zenn.dev/mconfjp/articles/transaction-action-order",
+   "likes": 92,
+   "published_at": "2026-09-29T11:45:05.102+09:00"
+  },
+  {
+   "title": "Cloudflare 上で Jev で作るほぼ0円運用可能な高品質なページ内検索",
+   "url": "https://zenn.dev/mazrean/articles/bd9b563ace18db",
+   "likes": 242,
+   "published_at": "2026-09-26T20:26:39.724+09:00"
+  },
+  {
+   "title": "Rustで作った自作OS「octox」がサンフランシスコ大学の教材になっていました",
+   "url": "https://zenn.dev/o8vm/articles/3934806424cd85",
+   "likes": 87,
+   "published_at": "2026-09-29T18:00:05.780+09:00"
+  },
+  {
+   "title": "OpenAI DevDay 2026 発表まとめ",
+   "url": "https://zenn.dev/schroneko/articles/openai-devday-2026",
+   "likes": 98,
+   "published_at": "2026-09-30T02:20:46.556+09:00"
+  },
+  {
+   "title": "Web 標準動向 2026年9月版",
+   "url": "https://zenn.dev/cybozu_frontend/articles/web_standards_trends_202609",
+   "likes": 22,
+   "published_at": "2026-09-30T18:00:08.146+09:00"
+  },
+  {
+   "title": "目を醒ませ 僕らの信頼が生成AIに侵略されてるぞ",
+   "url": "https://zenn.dev/spookies/articles/e70b80a510f5e2",
+   "likes": 67,
+   "published_at": "2026-09-29T10:00:08.950+09:00"
+  },
+  {
+   "title": "terraform applyしたら、1ヶ月半前のコードが本番に出ていた",
+   "url": "https://zenn.dev/gonta_ganbareyo/articles/6256bf2008b2ef",
+   "likes": 8,
+   "published_at": "2026-10-01T08:45:42.547+09:00"
+  },
+  {
+   "title": "新規プロダクトのバックエンド自動テスト戦略 ─UT 中心から API テスト中心へ─",
+   "url": "https://zenn.dev/canary_techblog/articles/348d976da70857",
+   "likes": 30,
+   "published_at": "2026-09-30T09:45:25.793+09:00"
+  },
+  {
+   "title": "オブザーバビリティのAIエージェントをどう評価するか",
+   "url": "https://zenn.dev/ymotongpoo/articles/20261001-agent-eval-loop",
+   "likes": 10,
+   "published_at": "2026-10-01T09:00:00.000+09:00"
+  },
+  {
+   "title": "テスト要求仕様（TRS）を書いてみたら、テスト設計が楽になった話",
+   "url": "https://zenn.dev/edash_tech_blog/articles/0d49bd338b64f0",
+   "likes": 43,
+   "published_at": "2026-09-29T11:40:05.133+09:00"
+  },
+  {
+   "title": "AI 駆動開発で「設計」はどこに書くのか ― 振る舞いをテストで検証できる「仕様」にしてみる",
+   "url": "https://zenn.dev/softbank/articles/6f98cf7c4ebfd3",
+   "likes": 36,
+   "published_at": "2026-09-29T16:02:41.625+09:00"
+  },
+  {
+   "title": "Claude Code / Codexで「私のlimit、減りすぎ…？」と思ったときに見る記事",
+   "url": "https://zenn.dev/tokium_dev/articles/ai-agent-usage-limit-long-sessions",
+   "likes": 27,
+   "published_at": "2026-09-29T12:00:09.979+09:00"
+  },
+  {
+   "title": "Claude Code の使用量はどう数えられているのか ── Max 20x で実測した重みは API 料金表と違った",
+   "url": "https://zenn.dev/tksfjt1024/articles/25c0ab111c277c",
+   "likes": 2,
+   "published_at": "2026-10-01T11:34:27.913+09:00"
+  },
+  {
+   "title": "『構文解析のしくみ』が出版されました（出版にあたって宣伝と裏話）",
+   "url": "https://zenn.dev/kmizu/articles/2026-09-parser-book",
+   "likes": 34,
+   "published_at": "2026-09-30T21:12:41.796+09:00"
+  },
+  {
+   "title": "ゲーミングPC向けで LLMとデプロイ環境を最適化してみた話",
+   "url": "https://zenn.dev/knowledgework/articles/2691721311c2e4",
+   "likes": 14,
+   "published_at": "2026-09-30T09:45:00.281+09:00"
+  },
+  {
+   "title": "ヘキサゴナルアーキテクチャを実装レベルで確かめてみた（その1）ポート・アダプター・アプリケーションはコードではどうなるのか",
+   "url": "https://zenn.dev/aws_japan/articles/hexagonal-architecture-lambda-1",
+   "likes": 8,
+   "published_at": "2026-09-30T10:04:42.757+09:00"
+  },
+  {
+   "title": "大きなボトルネックをごろごろ見つける方法 - 優秀なエンジニアになる",
+   "url": "https://zenn.dev/339/articles/56ef43afde8bd2",
+   "likes": 38,
+   "published_at": "2026-09-29T08:46:04.789+09:00"
+  },
+  {
+   "title": "Cloudflare の CLI を wrangler から cf に移行する",
+   "url": "https://zenn.dev/sora_kumo/articles/cloudflare-to-cf",
+   "likes": 85,
+   "published_at": "2026-09-29T13:43:50.860+09:00"
+  },
+  {
+   "title": "AI 時代の並列開発の環境構築 — git worktree ごとにアプリを同時に動かす",
+   "url": "https://zenn.dev/yoshihiko555/articles/0a7c29bbac4777",
+   "likes": 0,
+   "published_at": "2026-10-01T22:08:06.386+09:00"
+  },
+  {
+   "title": "Aurora PostgreSQL から Databricks Delta Lake テーブルにクエリする",
+   "url": "https://zenn.dev/ivry/articles/0b0bb60b57d4dd",
+   "likes": 5,
+   "published_at": "2026-10-01T18:25:59.564+09:00"
+  },
+  {
+   "title": "フロントエンドカンファレンス福岡2026に参加しました！",
+   "url": "https://zenn.dev/flagxs/articles/4511b45240eb59",
+   "likes": 8,
+   "published_at": "2026-10-01T15:02:06.182+09:00"
+  },
+  {
+   "title": "Aurora の複数テーブルを結合して CDC できる？OpenSearch Ingestion の joins を検証",
+   "url": "https://zenn.dev/aws_japan/articles/aurora-osis-joins",
+   "likes": 0,
+   "published_at": "2026-10-01T12:38:24.959+09:00"
+  },
+  {
+   "title": "[Android] Next.js + Capacitorで、タブレットをサイネージにした記録",
+   "url": "https://zenn.dev/shimarisu_121/articles/f0b8355697090e",
+   "likes": 0,
+   "published_at": "2026-10-01T06:47:46.386+09:00"
+  },
+  {
+   "title": "別会社の開発チームに AWS 環境を共有するのって大変だ",
+   "url": "https://zenn.dev/dress_code/articles/f89590d105ba5f",
+   "likes": 41,
+   "published_at": "2026-09-28T19:00:05.392+09:00"
+  },
+  {
+   "title": "探索できる人は何をしているの？『Explore It!』を読んで",
+   "url": "https://zenn.dev/knowledgework/articles/6996274de49607",
+   "likes": 41,
+   "published_at": "2026-09-28T12:00:05.374+09:00"
+  },
+  {
+   "title": "glibc の strlen は文字列範囲外を読むことで高速に計算する",
+   "url": "https://zenn.dev/peloeil/articles/glibc-strlen-2023",
+   "likes": 1,
+   "published_at": "2026-10-02T02:56:12.709+09:00"
+  },
+  {
+   "title": "go:embedによる辞書同梱とLambdaコールドスタートのコスト",
+   "url": "https://zenn.dev/sohohold/articles/go-embed-lambda-cold-start",
+   "likes": 0,
+   "published_at": "2026-10-02T02:16:20.015+09:00"
+  }
+ ],
+ "qiita": [
+  {
+   "title": "Twitter（現X）に貼ったURLのサムネイル画像、キャッシュクリアできるの知ってた？",
+   "url": "https://qiita.com/minorun365/items/f1f6a45fa9aff8d624af",
+   "likes": 39,
+   "published_at": "2026-09-29T16:16:02+09:00"
+  },
+  {
+   "title": "0から学ぶセキュリティの基礎　〜CSRF編〜",
+   "url": "https://qiita.com/Pigeon_gate/items/b33b4e337c15dddae20a",
+   "likes": 38,
+   "published_at": "2026-09-30T09:50:37+09:00"
+  },
+  {
+   "title": "荒れたテストケースをコード管理で立て直してみた",
+   "url": "https://qiita.com/hamham999/items/ebee7540a82db6933854",
+   "likes": 30,
+   "published_at": "2026-09-29T08:10:50+09:00"
+  },
+  {
+   "title": "【被害者は語る】タイムズカー660万件情報漏えいはなぜ起きたのかの矮小な考察",
+   "url": "https://qiita.com/miruky/items/6577a57b9b62c8f97e11",
+   "likes": 27,
+   "published_at": "2026-09-30T01:00:06+09:00"
+  }
+ ]
+}
