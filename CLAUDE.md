@@ -4,29 +4,26 @@ Obsidian を使用せず好きなエディタ(zed, vscode)でメモとか勉強�
 
 グラフビューだけ quartz で再現
 
-
 ## structure
 
 - notes/**/*.md
-    - メモ、ノート、コンテンツ
+  - メモ、ノート、コンテンツ
 - Makefile
-    - タスクランナー記述
+  - タスクランナー記述
 - template.md
-    - quartz 対応のフロントマター付き md テンプレート
+  - quartz 対応のフロントマター付き md テンプレート
 
-他に色々あるが、見なくて良い\
-`.zed/settings.json -> file_scan_exclusions` で無視している。\
+他に色々あるが、見なくて良い  
+`.zed/settings.json -> file_scan_exclusions` で無視している。  
 (快適な執筆作業のため無駄なため)
 
 claude でのコード生成などでも上記ファイル・ディレクトリだけ見れば良い
 
-
 ## scripts
 
 - `make setup` - 初回のみ実行。Quartz のセットアップを行う
-- `make preview` - notes のプレビューサーバーを起動。ブラウザで http://localhost:3000 でアクセス可能
+- `make preview` - notes のプレビューサーバーを起動。ブラウザで [http://localhost:3000](http://localhost:3000) でアクセス可能
 - `make new <path/title>` - 新しいノートを作成。例: `make new notes/javascript/basics`
-
 
 ## メモの作成
 
@@ -38,7 +35,6 @@ youtube, qiita, zenn などの代表的なサイトについては notes/* 以�
 ## directries
 
 主に、 `notes/*` ディレクトリ以下に markdown ファイルを配置する
-
 
 - notes/
   - qiita
@@ -69,16 +65,14 @@ qiita, zenn のURLを貼られたら、中身の記事を取得して要約を�
 また、 `./trend-archive/data` に cron で zenn のトレンドを日々記録してる
 zennに関して直近の〜とか今日の〜、みたいなことを効かれたらここを見て良さな記事を提案する。
 
-
 ## メモを作成するときの口調
 
 原始人口調/通常日本語で書くか聞かなくて良い。
 確認しないで、常に原始人口調で。
 
-
 ## learning.oreilly.com (O'reilly Learning サイト) の要約
 
-https://learning.oreilly.com/
+[https://learning.oreilly.com/](https://learning.oreilly.com/)
 のURLはログインしないと読めない
 claude in chrome を使用して、Chrome でサイトを開いて内容を見る
 (ログイン済み)
@@ -88,7 +82,9 @@ claude in chrome を使用して、Chrome でサイトを開いて内容を見�
 ## github リポジトリ要約
 
 github の URL をそのまま貼ったら、ディレクトリの内容を要約する。
-何度もソースを読む際に効率化したいので、 scratchpad などローカルリポジトリをクローンしてから読む。
+何度もソースを読む際に効率化したいので、ローカルリポジトリをクローンしてから読む。  
+  
+ghq get --shallow を使って取得管理し、別の独立セッションごとに同じリポジトリを見る場合は再取得しないで再利用する。最新ソースを見る場合はfetchする。
 
 ## SaaS / PaaS 要約
 
