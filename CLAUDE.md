@@ -52,7 +52,7 @@ youtube の URL を貼られたら、字幕をダウンロードして `/baoyu-y
 
 メモに保存する場合は**原始人口調**で書くこと。確認不要。
 
- `cd /Users/harumaxy/.claude/skills/baoyu-youtube-transcript` しないように
+ `cd .claude/skills/baoyu-youtube-transcript` しないように (スキルはこのリポジトリの `.claude/skills/` にある)
  このディレクトリ内でスクリプトを実行すること
 
  スピーカー識別などはしなくていいので、とにかく素早く内容だけ要約してほしい。
@@ -74,8 +74,9 @@ zennに関して直近の〜とか今日の〜、みたいなことを効かれ�
 
 [https://learning.oreilly.com/](https://learning.oreilly.com/)
 のURLはログインしないと読めない
-claude in chrome を使用して、Chrome でサイトを開いて内容を見る
-(ログイン済み)
+`orca-cli` スキルを読み、Orca 内蔵ブラウザでサイトを開いて内容を見る
+(claude in chrome は使わない)
+未ログインなら、ユーザーに Orca 内蔵ブラウザでのログインを依頼する
 
 メモを作成する場合、 notes/oreilly ディレクトリ以下に置く
 
